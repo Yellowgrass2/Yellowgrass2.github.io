@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+  }
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(233, 17, 215);
+}
+
+body {
+    background-color: plum;
+}
+img {
+    align-content: center;
+}
+
+p {
+    text-align: center;
+}
