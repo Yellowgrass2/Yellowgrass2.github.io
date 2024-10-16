@@ -7,18 +7,77 @@
     <title>POOKIE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="image1.jpeg" type="image/icon type">
-
 </head>
 
 <body>
-    <h1>Hello pookie!</h1>
-    <h1>Welkom op pookiesite!!!</h1>
-    <img src="IMG_3690.jpeg.png" alt="Cute foto samen" height="500">
-    <img src="image0.jpeg" alt="Perry" height="500">
-    <img src="image1.jpeg" alt="Snor" height="500">
-    <img src="Unknown.jpeg" alt="together" height="500">
-    <p>Goodbye</p>
-    <p>Kissy <3</p>
+    <div>
+        <h1>Hello pookie!</h1>
+        <h1>Welkom op pookiesite!!!</h1>
+    </div>
+    <div>
+        <img src="IMG_3690.jpeg.png" alt="Cute foto samen" height="500">
+        <img src="image0.jpeg" alt="Perry" height="500">
+        <img src="image1.jpeg" alt="Snor" height="500">
+        <img src="Unknown.jpeg" alt="together" height="500">
+    </div>
+    <div>
+        <h2>Redenen waarom ik van mijn pookie hou:</h2>
+        <ul>
+            <li>Pookie is cute</li>
+            <li>Pookie is lief</li>
+            <li>Alles eigenlijk</li>
+        </ul>
+    </div>
+    <form action="mailto:arthur.boeynaems@student.hogent.be?subject=Ik hou super veel van jou kleine pookie Arthur"
+          method="post" enctype="text/plain">
+        <h2>POOKIE APPLICATION</h2>
+        <div>
+            <label> Do you love me? <input type="radio" name="Do you love me?" id="Do you love me?" /> Yes <input
+                       type="radio" name="Do you love me?" id="Do you love me?" /> No :( </label>
+        </div>
+        <div>
+            <label> Naam: <input type="text" autocomplete="on" placeholder="Hier moet pookienaam" name="Naam" />
+            </label>
+        </div>
+        <div>
+            <label> Voornaam: <input type="text" autocomplete="on" placeholder="Hier pookievoornaam" name="Voornaam" />
+            </label>
+        </div>
+        <div>
+            <label> Secret PookPassWord: <input type="password" placeholder="shhhhh" name="Password" />
+            </label>
+        </div>
+        <div>
+            <label> Wanneer is de ULTIMATE POOKIEDATE? <input type="date" name="Datum">
+            </label>
+        </div>
+        <div>
+            <label> Hoeveel Years? <input type="number" name="Aantal jaar">
+            </label>
+        </div>
+        <div>
+            <label> Waar gaan we eten? <select name="Eetplaats" id="Eetplaats">
+                    <option value="Basta">Basta</option>
+                    <option value="Billie">Billie</option>
+                    <option value="Kastart">Kastart</option>
+                    <option value="Bavet">Bavet</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label> Wil je nog iets toevoegen? <textarea name="extra" id="extra"></textarea>
+            </label>
+        </div>
+        <div>
+            <label>
+                <button type="submit">Klaar is kees!</button>
+            </label>
+        </div>
+    </form>
+    <div>
+        <p>Goodbye</p>
+        <p>Kissy >3</p>
+    </div>
 </body>
 
 </html>
