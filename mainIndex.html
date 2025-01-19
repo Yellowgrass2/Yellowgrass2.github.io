@@ -39,20 +39,29 @@
     </div>
     <div id="timer"></div>
 
-   
+    <style>
+        #timer {
+            padding: 10px;
+            color: purple;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
     <script>
         function updateTimer() {
             const startDate = new Date('October 1, 2022 00:00:00');
             const now = new Date();
             const timeDifference = now - startDate;
 
-            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365));
+            const days = Math.floor((timeDifference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
             document.getElementById('timer').innerHTML = 
-                days + " dagen " + hours + " uur " + minutes + " minuten " + seconds + " seconden ";
+                years + " jaren " + days + " dagen " + hours + " uur " + minutes + " minuten " + seconds + " seconden ";
         }
 
         setInterval(updateTimer, 1000);
