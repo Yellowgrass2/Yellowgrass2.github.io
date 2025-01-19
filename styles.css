@@ -1,12 +1,13 @@
 label {
-  display: flexbox;
-   background-color: black;
-   border: solid 3px black;
-   border-radius: 10px;
-   color: white;
+    display: flexbox;
+    background-color: black;
+    border: solid 3px black;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-form{
+form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,62 +17,81 @@ form{
     margin-inline: 700px;
     margin-block: 0;
     margin-top: 50px;
-    background: linear-gradient(to left, purple, black);
+    background: linear-gradient(to left, pink, white);
     border-radius: 70px;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
-input{
+input {
     border-radius: 10px;
     border: 4px solid black;
 }
 
-h1{
+h1 {
     text-align: center;
     color: black;
     text-decoration: underline;
 }
 
 body {
-    background: linear-gradient(to right, black, purple);
+    background: linear-gradient(to right, white, pink);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
 }
 
 
-    button{
-        font-size: larger;
-        margin-top: 20px;
-        background-color: black;
-        color: white;
-        border: solid 3px black;
-        border-radius: 10px;
-    }
+button {
+    font-size: larger;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: solid 3px black;
+    border-radius: 10px;
+}
 
-    button:hover{
-        background-color: purple;
-        color: black;
-        transition: background-color 1s ease-in-out, color 1s ease-in-out;
-    }
+button:hover {
+    background-color: pink;
+    color: black;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
 
-    #username:hover{
-        font-size: larger;
-        transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
+#username:hover {
+    font-size: larger;
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
-    #password:hover{
-        font-size: larger;
-        transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
+#password:hover {
+    font-size: larger;
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
-    #password {
-        transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
+#password {
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
-    #username {
-        transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
+#username {
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
 
-   button {
-       transition: background-color 2s ease-in-out, color 2s ease-in-out;
-   }
+button {
+    transition: background-color 2s ease-in-out, color 2s ease-in-out;
+}
 
 @media (max-width: 768px) {
     form {
@@ -92,4 +112,41 @@ body {
     button {
         font-size: medium;
     }
+}
+
+
+/* Add a glowing effect to the form */
+form {
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
+
+/* Add a pulsing effect to the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    animation: pulse 2s infinite;
+}
+
+/* Add a hover effect to the form */
+form:hover {
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Add a focus effect to the input fields */
+input:focus {
+    border-color: pink;
+    box-shadow: 0 0 10px pink;
+    outline: none;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
